@@ -1,0 +1,628 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>MTH Global Education — Study in China | Spring Intake 2027</title>
+<meta name="description" content="MTH Global Education helps students from Pakistan, India, Central Asia & Africa get admission and scholarships at Chinese universities. MBBS, Bachelor's, Master's, PhD, Diploma & Chinese Language. Spring Intake 2027 — apply now.">
+<meta property="og:title" content="MTH Global Education — Study in China">
+<meta property="og:description" content="Your Dreams. Our Guidance. Your Future. Scholarships for MBBS, Bachelor's, Master's & PhD in China. Spring Intake 2027.">
+<meta property="og:type" content="website">
+<meta property="og:image" content="https://zarkidev.github.io/mthglobal/assets/flyer.jpg">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='6' fill='%230b2447'/%3E%3Ctext x='16' y='22' font-family='Arial Black,Arial' font-size='13' font-weight='900' fill='%23e6b422' text-anchor='middle'%3EMTH%3C/text%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Oswald:wght@500;600;700&display=swap" rel="stylesheet">
+<style>
+:root{
+  --navy:#0b2447;
+  --navy-2:#123163;
+  --navy-3:#19407f;
+  --gold:#e6b422;
+  --gold-2:#f5cd4f;
+  --gold-dark:#c29417;
+  --ink:#1d2733;
+  --body:#46566a;
+  --muted:#5b6b7d;
+  --paper:#f7f5ef;
+  --card:#ffffff;
+  --line:#e5e1d6;
+  --wa:#25d366;
+  --wa-dark:#1ea955;
+  --radius:16px;
+  --shadow:0 10px 30px rgba(11,36,71,.10);
+  --shadow-lg:0 22px 60px rgba(11,36,71,.18);
+}
+*{margin:0;padding:0;box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{font-family:'Inter',system-ui,sans-serif;color:var(--ink);background:var(--paper);line-height:1.6;font-size:16px;-webkit-font-smoothing:antialiased}
+img{max-width:100%;display:block}
+a{color:inherit;text-decoration:none}
+h1,h2,h3,.brand-name,.btn{font-family:'Oswald','Inter',sans-serif;letter-spacing:.02em}
+.wrap{width:min(1120px,92%);margin:0 auto}
+section{padding:88px 0}
+.kicker{display:inline-block;font-size:.78rem;font-weight:700;letter-spacing:.22em;text-transform:uppercase;color:var(--gold-dark);margin-bottom:14px}
+.h-title{font-size:clamp(1.8rem,4vw,2.6rem);font-weight:700;line-height:1.15;text-transform:uppercase;color:var(--navy)}
+.h-sub{color:var(--body);max-width:640px;margin-top:12px;font-size:1rem}
+
+/* ---------- header ---------- */
+header{position:sticky;top:0;z-index:50;background:rgba(11,36,71,.97);backdrop-filter:blur(8px);border-bottom:1px solid rgba(230,180,34,.25)}
+.nav{display:flex;align-items:center;justify-content:space-between;gap:16px;padding:14px 0}
+.brand{display:flex;align-items:center;gap:12px}
+.brand-mark{width:44px;height:44px;flex:none}
+.brand-name{color:#fff;font-size:1.15rem;font-weight:700;line-height:1.1}
+.brand-name small{display:block;font-size:.62rem;letter-spacing:.3em;color:var(--gold);font-weight:600;font-family:'Inter',sans-serif}
+.nav-links{display:flex;align-items:center;gap:26px;list-style:none}
+.nav-links a{color:#cdd8ea;font-size:.92rem;font-weight:500;transition:color .2s}
+.nav-links a:hover{color:var(--gold-2)}
+.nav-cta{background:var(--wa);color:#fff;font-weight:600;font-size:.88rem;padding:11px 20px;border-radius:10px;display:inline-flex;align-items:center;gap:8px;transition:transform .15s,box-shadow .2s;box-shadow:0 4px 14px rgba(37,211,102,.3)}
+.nav-cta:hover{transform:translateY(-1px);box-shadow:0 8px 20px rgba(37,211,102,.4)}
+.burger{display:none;background:none;border:0;cursor:pointer;padding:8px}
+.burger span{display:block;width:24px;height:2px;background:#fff;margin:5px 0;transition:.25s}
+.burger.open span:nth-child(1){transform:translateY(7px) rotate(45deg)}
+.burger.open span:nth-child(2){opacity:0}
+.burger.open span:nth-child(3){transform:translateY(-7px) rotate(-45deg)}
+
+/* ---------- hero ---------- */
+.hero{position:relative;background:linear-gradient(160deg,var(--navy) 0%,var(--navy-2) 55%,var(--navy-3) 100%);color:#fff;padding:0;overflow:hidden}
+.hero::before{content:"";position:absolute;top:-220px;right:-160px;width:560px;height:560px;border-radius:50%;background:radial-gradient(circle,rgba(230,180,34,.16),transparent 65%);pointer-events:none}
+.hero-inner{position:relative;z-index:2;display:grid;grid-template-columns:1fr;gap:0;align-items:center;padding:92px 0 140px}
+.hero-copy{max-width:800px}
+.badge{display:inline-flex;align-items:center;gap:10px;background:rgba(230,180,34,.14);border:1px solid rgba(230,180,34,.5);color:var(--gold-2);font-size:.8rem;font-weight:700;letter-spacing:.18em;text-transform:uppercase;padding:10px 18px;border-radius:999px;margin-bottom:24px}
+.badge .dot{width:9px;height:9px;border-radius:50%;background:var(--gold);animation:pulse 1.8s infinite}
+@keyframes pulse{0%,100%{box-shadow:0 0 0 3px rgba(230,180,34,.35)}50%{box-shadow:0 0 0 8px rgba(230,180,34,.05)}}
+.hero h1{font-size:clamp(2.4rem,5.5vw,4.1rem);font-weight:700;line-height:1.06;text-transform:uppercase}
+.hero h1 .gold{color:var(--gold);text-shadow:0 6px 30px rgba(230,180,34,.25)}
+.hero p.lead{font-size:1.08rem;color:#c9d5ea;margin:22px 0 8px;max-width:560px;line-height:1.65;overflow-wrap:break-word;text-shadow:0 1px 8px rgba(8,26,53,.6)}
+.hero .tagline{font-style:italic;color:var(--gold-2);font-weight:500;font-size:1.05rem;text-shadow:0 2px 10px rgba(8,26,53,.65)}
+.hero-ctas{display:flex;flex-wrap:wrap;gap:14px;margin-top:34px}
+.btn{display:inline-flex;align-items:center;gap:10px;font-size:1.02rem;font-weight:600;padding:16px 30px;border-radius:12px;transition:transform .15s,box-shadow .2s;cursor:pointer;border:0}
+.btn:active{transform:scale(.98)}
+.btn-wa{background:var(--wa);color:#fff;box-shadow:0 10px 26px rgba(37,211,102,.35)}
+.btn-wa:hover{transform:translateY(-2px);box-shadow:0 14px 32px rgba(37,211,102,.45)}
+.btn-ghost{background:transparent;color:#fff;border:1.5px solid rgba(255,255,255,.55)}
+.btn-ghost:hover{border-color:var(--gold);color:var(--gold-2)}
+/* stat band */
+.hero-stats{display:grid;grid-template-columns:repeat(3,1fr);gap:0;margin-top:46px;border-top:1px solid rgba(255,255,255,.16);padding-top:26px;text-align:left}
+.stat{padding:0 22px}
+.stat:first-child{padding-left:0}
+.stat+.stat{border-left:1px solid rgba(255,255,255,.16)}
+.stat b{display:block;font-family:'Oswald',sans-serif;font-size:2.4rem;font-weight:700;color:var(--gold-2);line-height:1.1}
+.stat span{font-size:.8rem;color:#aebbd3;letter-spacing:.05em}
+/* brand panel */
+.brand-panel{background:linear-gradient(155deg,var(--navy-2),var(--navy));border:1px solid rgba(230,180,34,.4);border-radius:var(--radius);padding:48px 38px;text-align:center;color:#fff;box-shadow:var(--shadow-lg);display:flex;flex-direction:column;align-items:center;justify-content:center;gap:28px;position:relative;overflow:hidden}
+.brand-panel::before{content:"";position:absolute;top:-90px;left:50%;transform:translateX(-50%);width:340px;height:220px;background:radial-gradient(ellipse,rgba(230,180,34,.22),transparent 70%);pointer-events:none}
+.brand-panel .mark{width:120px;height:120px;filter:drop-shadow(0 12px 24px rgba(0,0,0,.35))}
+.brand-panel .word{font-family:'Oswald',sans-serif;font-size:1.6rem;font-weight:700;letter-spacing:.06em;color:#fff;line-height:1.3}
+.brand-panel .word small{display:block;font-size:.68rem;letter-spacing:.34em;color:var(--gold-2);font-weight:600;font-family:'Inter',sans-serif;margin-top:4px}
+.brand-panel .quote{font-style:italic;color:#c9d5ea;font-size:1rem;line-height:1.8;max-width:300px}
+.brand-panel .quote b{color:var(--gold-2)}
+.skyline{position:absolute;bottom:-2px;left:0;right:0;z-index:1;pointer-events:none}
+.skyline svg{display:block;width:100%;height:auto}
+
+/* ---------- programs ---------- */
+.grid-3{display:grid;grid-template-columns:repeat(3,1fr);gap:24px;margin-top:48px}
+.card{background:var(--card);border:1px solid var(--line);border-radius:var(--radius);padding:30px;box-shadow:var(--shadow);transition:transform .2s,box-shadow .2s,border-color .2s;position:relative;overflow:hidden}
+.card:hover{transform:translateY(-6px);box-shadow:var(--shadow-lg);border-color:var(--gold)}
+.card::after{content:"";position:absolute;top:0;left:0;right:0;height:3px;background:linear-gradient(90deg,var(--gold),var(--gold-2));opacity:0;transition:opacity .2s}
+.card:hover::after{opacity:1}
+.card .icon{width:56px;height:56px;border-radius:14px;display:grid;place-items:center;background:linear-gradient(135deg,#fdf3d3,#f3dfa4);color:var(--navy);margin-bottom:20px;border:1px solid #ecd9a0}
+.card h3{font-size:1.12rem;font-weight:700;text-transform:uppercase;color:var(--navy);font-family:'Inter',sans-serif;letter-spacing:.03em}
+.card p{color:var(--body);font-size:.94rem;margin-top:10px;line-height:1.6}
+.card.featured{background:linear-gradient(155deg,var(--navy-2),var(--navy));border-color:var(--gold)}
+.card.featured .icon{background:linear-gradient(135deg,var(--gold),var(--gold-dark));color:var(--navy);border-color:transparent}
+.card.featured h3{color:var(--gold-2)}
+.card.featured p{color:#c9d5ea}
+.card.featured::before{content:"★ MOST POPULAR";position:absolute;top:14px;right:14px;background:var(--gold);color:var(--navy);font-size:.6rem;font-weight:700;letter-spacing:.12em;padding:6px 12px;border-radius:999px;box-shadow:0 4px 12px rgba(0,0,0,.28);font-family:'Inter',sans-serif;z-index:2}
+.card.featured::after{opacity:1}
+
+/* ---------- scholarships ---------- */
+.dark{background:var(--navy);color:#fff}
+.dark .h-title{color:#fff}
+.dark .h-sub{color:#b6c3da}
+.sch-grid{display:grid;grid-template-columns:1fr 1fr;gap:24px;margin-top:48px}
+.sch{border-radius:var(--radius);padding:36px;position:relative;overflow:hidden}
+.sch.full{background:linear-gradient(140deg,var(--gold) 0%,var(--gold-dark) 100%);color:var(--navy);box-shadow:0 22px 50px rgba(230,180,34,.25)}
+.sch.partial{background:rgba(255,255,255,.09);border:1.5px solid rgba(255,255,255,.3);color:#fff;box-shadow:0 18px 44px rgba(0,0,0,.35)}
+.sch .ribbon{font-size:.7rem;font-weight:700;letter-spacing:.18em;text-transform:uppercase;opacity:.85}
+.sch h3{font-size:1.55rem;font-weight:700;margin:10px 0 12px;text-transform:uppercase}
+.sch ul{list-style:none;margin-top:10px}
+.sch li{display:flex;gap:10px;align-items:flex-start;padding:8px 0;font-size:.95rem;line-height:1.5}
+.sch li::before{content:"✓";font-weight:700;flex:none}
+.sch.full li{color:#243352}
+.sch.full li::before{color:var(--navy)}
+.sch.partial li::before{color:var(--gold-2)}
+.note{margin-top:30px;background:rgba(230,180,34,.12);border:1px solid rgba(230,180,34,.5);border-radius:12px;padding:20px 24px;font-size:.9rem;color:#efe3b8;display:flex;gap:14px;align-items:flex-start;line-height:1.6}
+.note svg{flex:none;margin-top:3px;color:var(--gold)}
+
+/* ---------- steps ---------- */
+.steps{display:grid;grid-template-columns:repeat(3,1fr);gap:24px;margin-top:48px;counter-reset:step}
+.step{background:var(--card);border:1px solid var(--line);border-radius:var(--radius);padding:32px;position:relative;box-shadow:var(--shadow);transition:transform .2s,box-shadow .2s}
+.step:hover{transform:translateY(-5px);box-shadow:var(--shadow-lg)}
+.step .num{font-family:'Oswald',sans-serif;font-size:3.2rem;font-weight:700;color:var(--gold);line-height:1;display:block}
+.step .num::after{content:"";display:block;width:36px;height:3px;background:var(--gold);margin-top:10px;border-radius:2px}
+.step h3{font-size:1.05rem;font-weight:700;color:var(--navy);margin:16px 0 8px;font-family:'Inter',sans-serif}
+.step p{color:var(--body);font-size:.93rem;line-height:1.6}
+
+/* ---------- countries ---------- */
+.region{background:var(--card);border:1px solid var(--line);border-radius:var(--radius);padding:30px;box-shadow:var(--shadow);display:flex;flex-direction:column}
+.region h3{font-size:1.02rem;font-weight:700;text-transform:uppercase;color:var(--navy);display:flex;align-items:center;gap:12px;font-family:'Inter',sans-serif;letter-spacing:.06em}
+.region h3::after{content:"";flex:1;height:1px;background:var(--line)}
+.flags{display:flex;flex-wrap:wrap;gap:10px;margin-top:auto;padding-top:20px}
+.chip{display:inline-flex;align-items:center;gap:8px;background:var(--paper);border:1px solid var(--line);border-radius:999px;padding:8px 14px;font-size:.88rem;font-weight:500;color:var(--ink);white-space:nowrap}
+.chip:hover{border-color:var(--gold);background:#fdf8e9}
+.chip .f{font-size:1.1rem;line-height:1}
+
+/* ---------- flyer / why us ---------- */
+.why{background:#fff;border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
+.flyer-grid{display:grid;grid-template-columns:.85fr 1.15fr;gap:56px;align-items:center}
+.flyer-grid>*{min-width:0}
+.point{display:flex;gap:16px;margin-top:24px}
+.point .icon{width:46px;height:46px;flex:none;border-radius:12px;display:grid;place-items:center;background:linear-gradient(135deg,#fdf3d3,#f3dfa4);color:var(--navy);border:1px solid #ecd9a0}
+.point h3{font-size:1.02rem;font-weight:700;color:var(--navy);font-family:'Inter',sans-serif}
+.point p{color:var(--body);font-size:.94rem;margin-top:4px;line-height:1.6}
+.why .h-title br{display:none}
+
+/* ---------- contact ---------- */
+.contact-card{background:linear-gradient(150deg,var(--navy-2),var(--navy));border-radius:20px;padding:clamp(32px,5vw,60px);color:#fff;text-align:center;box-shadow:var(--shadow-lg);border:1px solid rgba(230,180,34,.35);position:relative;overflow:hidden}
+.contact-card::before{content:"";position:absolute;top:-140px;left:50%;transform:translateX(-50%);width:420px;height:280px;background:radial-gradient(ellipse,rgba(230,180,34,.2),transparent 70%);pointer-events:none}
+.contact-card .avatar{width:88px;height:88px;border-radius:50%;margin:0 auto 20px;display:grid;place-items:center;background:linear-gradient(135deg,var(--gold),var(--gold-dark));font-family:'Oswald',sans-serif;font-size:1.8rem;font-weight:700;color:var(--navy);box-shadow:0 14px 34px rgba(230,180,34,.35)}
+.contact-card h2{font-size:clamp(1.6rem,3.5vw,2.3rem);text-transform:uppercase;font-weight:700}
+.contact-card .role{color:var(--gold-2);font-weight:600;letter-spacing:.16em;text-transform:uppercase;font-size:.78rem;margin-top:8px}
+.contact-card p.desc{color:#c9d5ea;max-width:500px;margin:20px auto 0;font-size:.96rem}
+.contact-num{display:inline-block;margin:28px 0 6px;font-family:'Oswald',sans-serif;font-size:clamp(1.4rem,3vw,1.9rem);letter-spacing:.06em;color:#fff}
+.contact-hint{font-size:.8rem;color:#aebbd3;margin-bottom:28px}
+
+/* ---------- footer ---------- */
+footer{background:#081a35;color:#8fa1bd;padding:44px 0;text-align:center;font-size:.85rem}
+footer .tag{font-style:italic;color:var(--gold-2);font-size:.95rem;margin-bottom:10px}
+footer .brand-name{font-size:1rem;color:#e6b422}
+
+/* ---------- floating WA + sticky bar ---------- */
+.float-wa{position:fixed;right:24px;bottom:24px;z-index:60;width:62px;height:62px;border-radius:50%;background:var(--wa);display:grid;place-items:center;color:#fff;box-shadow:0 12px 30px rgba(37,211,102,.5);transition:transform .2s}
+.float-wa:hover{transform:scale(1.08)}
+.sticky-cta{position:fixed;left:0;right:0;bottom:0;z-index:60;display:none;grid-template-columns:1fr auto;gap:0;background:rgba(11,36,71,.97);backdrop-filter:blur(8px);border-top:2px solid var(--gold);padding:10px 14px calc(10px + env(safe-area-inset-bottom));transform:translateY(110%);transition:transform .3s ease;box-shadow:0 -12px 34px rgba(0,0,0,.35)}
+.sticky-cta.show{transform:none}
+.sticky-cta .s-wa{display:flex;align-items:center;justify-content:center;gap:9px;background:var(--wa);color:#fff;font-weight:600;font-size:.95rem;font-family:'Oswald',sans-serif;letter-spacing:.03em;padding:14px 18px;border-radius:12px}
+.sticky-cta .s-num{display:flex;align-items:center;padding:0 16px;color:var(--gold-2);font-family:'Oswald',sans-serif;font-size:1.02rem;letter-spacing:.05em}
+
+/* ---------- reveal ---------- */
+.reveal{opacity:0;transform:translateY(26px);transition:opacity .7s ease,transform .7s ease}
+.reveal.in{opacity:1;transform:none}
+.grid-3 .reveal:nth-child(2){transition-delay:.08s}
+.grid-3 .reveal:nth-child(3){transition-delay:.16s}
+.grid-3 .reveal:nth-child(5){transition-delay:.08s}
+.grid-3 .reveal:nth-child(6){transition-delay:.16s}
+
+/* ---------- hero photo ---------- */
+.hero-bg{position:absolute;inset:0;z-index:0;overflow:hidden}
+.hero-bg img{width:100%;height:100%;object-fit:cover;animation:kenburns 26s ease-in-out infinite alternate}
+@keyframes kenburns{from{transform:scale(1) translate(0,0)}to{transform:scale(1.09) translate(-1.5%,-1.5%)}}
+.hero::after{content:"";position:absolute;inset:0;z-index:1;background:linear-gradient(180deg,rgba(11,36,71,.90) 0%,rgba(11,36,71,.72) 48%,rgba(11,36,71,.86) 100%);pointer-events:none}
+
+/* ---------- life in china tiles ---------- */
+.tiles{display:grid;grid-template-columns:repeat(3,1fr);gap:24px;margin-top:44px}
+.tile{position:relative;border-radius:var(--radius);overflow:hidden;box-shadow:var(--shadow);aspect-ratio:3/2;transform-style:preserve-3d;transition:transform .3s ease,box-shadow .3s ease;background:var(--navy)}
+.tile img{width:100%;height:100%;object-fit:cover;transition:transform .7s ease}
+.tile:hover{box-shadow:var(--shadow-lg)}
+.tile:hover img{transform:scale(1.06)}
+.tile figcaption{position:absolute;left:0;right:0;bottom:0;padding:54px 20px 18px;background:linear-gradient(180deg,transparent,rgba(8,26,53,.92));color:#fff}
+.tile figcaption b{display:block;font-family:'Oswald',sans-serif;font-size:1.05rem;font-weight:600;letter-spacing:.04em;text-transform:uppercase}
+.tile figcaption span{font-size:.82rem;color:#c9d5ea}
+
+/* ---------- polish pass ---------- */
+section[id]{scroll-margin-top:86px}
+.h-title{position:relative;padding-bottom:16px}
+.h-title::after{content:"";position:absolute;left:0;bottom:0;width:56px;height:3px;border-radius:2px;background:linear-gradient(90deg,var(--gold),var(--gold-2))}
+.card .icon{transition:transform .25s ease}
+.card:hover .icon{transform:rotate(-6deg) scale(1.08)}
+.btn-wa{position:relative;overflow:hidden}
+.btn-wa::after{content:"";position:absolute;top:0;left:-80%;width:45%;height:100%;background:linear-gradient(105deg,transparent,rgba(255,255,255,.38),transparent);transform:skewX(-20deg);transition:left .55s ease}
+.btn-wa:hover::after{left:135%}
+.nav-links a.active{color:var(--gold-2)}
+.plane{position:absolute;bottom:200px;left:-6%;z-index:1;opacity:.9;pointer-events:none;animation:fly 24s linear infinite;color:var(--gold-2)}
+.plane svg{width:30px;height:30px;filter:drop-shadow(0 4px 10px rgba(230,180,34,.4))}
+@keyframes fly{0%{transform:translate(0,0)}20%{transform:translate(24vw,-20px)}45%{transform:translate(52vw,10px)}70%{transform:translate(80vw,-14px)}100%{transform:translate(112vw,0)}}
+.emails{display:flex;flex-wrap:wrap;gap:12px;justify-content:center;margin:2px 0 30px}
+.mail{display:inline-flex;align-items:center;gap:9px;border:1.5px solid rgba(230,180,34,.5);color:#f3e5b5;padding:10px 18px;border-radius:999px;font-size:.85rem;font-weight:500;transition:background .2s,border-color .2s}
+.mail:hover{background:rgba(230,180,34,.14);border-color:var(--gold)}
+.mail svg{color:var(--gold-2)}
+@media (prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important}.reveal{opacity:1;transform:none}}
+
+/* ---------- responsive ---------- */
+@media (max-width:960px){
+  .hero-inner{padding:68px 0 120px}
+  .tiles{grid-template-columns:repeat(2,1fr)}
+  .grid-3{grid-template-columns:repeat(2,1fr)}
+  .flyer-grid{grid-template-columns:1fr;gap:40px}
+  .brand-panel{padding:38px 26px;max-width:440px;margin:0 auto;width:100%}
+  .why .h-title br{display:block}
+}
+@media (max-width:720px){
+  body{font-size:15.5px;padding-bottom:76px}
+  .nav-links{position:fixed;inset:64px 0 auto 0;background:var(--navy);flex-direction:column;align-items:flex-start;padding:12px 5% 28px;gap:22px;transform:translateY(-135%);transition:transform .3s ease;box-shadow:0 30px 40px rgba(0,0,0,.4)}
+  .nav-links.open{transform:none}
+  .burger{display:block}
+  .nav-cta{margin-left:auto;padding:9px 14px;font-size:.8rem}
+  section{padding:66px 0}
+  .hero h1{font-size:clamp(2.1rem,9vw,2.7rem)}
+  .hero-stats{grid-template-columns:repeat(3,1fr);gap:0;padding-top:20px}
+  .stat{padding:0 10px}
+  .stat b{font-size:1.7rem}
+  .stat span{font-size:.68rem}
+  .grid-3,.steps,.sch-grid{grid-template-columns:1fr}
+  .sch{padding:28px}
+  .hero-ctas .btn{flex:1;justify-content:center;min-height:52px}
+  .btn-ghost{border-color:rgba(255,255,255,.7)}
+  .plane{bottom:130px;opacity:.65;z-index:2}
+  .sticky-cta{display:grid}
+  .tiles{grid-template-columns:1fr}
+  .tile{aspect-ratio:4/3}
+  .float-wa{display:none}
+}
+</style>
+</head>
+<body>
+
+<header>
+  <div class="wrap nav">
+    <a class="brand" href="#top" aria-label="MTH Global Education">
+      <svg class="brand-mark" viewBox="0 0 48 48" fill="none" aria-hidden="true">
+        <rect width="48" height="48" rx="10" fill="#e6b422"/>
+        <path d="M24 12 8 19l16 7 16-7-16-7Z" fill="#0b2447"/>
+        <path d="M14 23v7c0 3 4.5 5.5 10 5.5S34 33 34 30v-7" stroke="#0b2447" stroke-width="2.6" fill="none" stroke-linecap="round"/>
+        <circle cx="38" cy="20" r="2.2" fill="#0b2447"/>
+      </svg>
+      <span class="brand-name">MTH<small>GLOBAL EDUCATION</small></span>
+    </a>
+    <nav>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="#programs">Programs</a></li>
+        <li><a href="#scholarships">Scholarships</a></li>
+        <li><a href="#guidance">How It Works</a></li>
+        <li><a href="#countries">Countries</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+    <a class="nav-cta" href="https://wa.me/992005114981?text=Hello%20MTH%20Global%20Education%2C%20I%20want%20information%20about%20studying%20in%20China." target="_blank" rel="noopener">
+      <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2a10 10 0 0 0-8.6 15L2 22l5.2-1.4A10 10 0 1 0 12 2Zm5.3 14.1c-.2.6-1.3 1.2-1.8 1.2-.5.1-1 .2-3.4-.7-2.9-1.2-4.7-4.1-4.9-4.3-.1-.2-1.1-1.5-1.1-2.9s.7-2 1-2.3c.2-.3.5-.3.7-.3h.5c.2 0 .4 0 .6.4l.9 2.1c.1.2.1.4 0 .6l-.4.6-.5.6c-.2.2-.3.3-.1.6.2.3.8 1.4 1.8 2.2 1.3 1.1 2.3 1.5 2.6 1.6.3.1.5.1.7-.1l1-1.2c.2-.3.4-.2.7-.1l2 1c.3.1.5.2.6.3.1.2.1.7-.2 1.3Z"/></svg>
+      WhatsApp
+    </a>
+    <button class="burger" id="burger" aria-label="Open menu" aria-expanded="false"><span></span><span></span><span></span></button>
+  </div>
+</header>
+
+<main id="top">
+
+  <!-- HERO -->
+  <section class="hero" id="hero">
+    <div class="hero-bg" aria-hidden="true">
+      <img src="assets/img/hero.jpg" alt="" width="1600" height="1067" fetchpriority="high">
+    </div>
+    <div class="wrap hero-inner">
+      <div class="hero-copy">
+        <span class="badge"><span class="dot"></span> Spring Intake 2027 — Now Open</span>
+        <h1>Study in <span class="gold">China</span><br>With Confidence</h1>
+        <p class="lead">Admission and scholarship guidance for international students at Chinese universities — from application to arrival.</p>
+        <p class="tagline">"Make Tomorrow Happen"</p>
+        <div class="hero-ctas">
+          <a class="btn btn-wa" href="https://wa.me/992005114981?text=Hello%20MTH%20Global%20Education%2C%20I%20want%20to%20apply%20for%20Spring%20Intake%202027." target="_blank" rel="noopener">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2a10 10 0 0 0-8.6 15L2 22l5.2-1.4A10 10 0 1 0 12 2Zm5.3 14.1c-.2.6-1.3 1.2-1.8 1.2-.5.1-1 .2-3.4-.7-2.9-1.2-4.7-4.1-4.9-4.3-.1-.2-1.1-1.5-1.1-2.9s.7-2 1-2.3c.2-.3.5-.3.7-.3h.5c.2 0 .4 0 .6.4l.9 2.1c.1.2.1.4 0 .6l-.4.6-.5.6c-.2.2-.3.3-.1.6.2.3.8 1.4 1.8 2.2 1.3 1.1 2.3 1.5 2.6 1.6.3.1.5.1.7-.1l1-1.2c.2-.3.4-.2.7-.1l2 1c.3.1.5.2.6.3.1.2.1.7-.2 1.3Z"/></svg>
+            Apply on WhatsApp
+          </a>
+          <a class="btn btn-ghost" href="#programs">Explore Programs</a>
+        </div>
+        <div class="hero-stats">
+          <div class="stat"><b>12+</b><span>Countries Served</span></div>
+          <div class="stat"><b>6</b><span>Program Levels</span></div>
+          <div class="stat"><b>2</b><span>Scholarship Types</span></div>
+        </div>
+      </div>
+    </div>
+    <div class="plane" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 2 11 13"/><path d="M22 2 15 22l-4-9-9-4 20-7Z"/></svg></div>
+  </section>
+
+  <!-- PROGRAMS -->
+  <section id="programs">
+    <div class="wrap">
+      <span class="kicker">What You Can Study</span>
+      <h2 class="h-title">Programs &amp; Degrees</h2>
+      <p class="h-sub">From medicine to language — every level of Chinese university education, guided end to end.</p>
+      <div class="grid-3">
+        <article class="card featured reveal">
+          <div class="icon"><svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round"><path d="M9 3h6v6h6v6h-6v6H9v-6H3V9h6V3z"/></svg></div>
+          <h3>MBBS</h3>
+          <p>Bachelor of Medicine &amp; Bachelor of Surgery — the most popular route for international students in China, at MOE-approved medical universities.</p>
+        </article>
+        <article class="card reveal">
+          <div class="icon"><svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 9 12 4 2 9l10 5 10-5Z"/><path d="M6 11.5V16c0 1.7 2.7 3 6 3s6-1.3 6-3v-4.5"/></svg></div>
+          <h3>Bachelor's Degree</h3>
+          <p>Undergraduate programs across engineering, business, science, IT and more — English-taught options available.</p>
+        </article>
+        <article class="card reveal">
+          <div class="icon"><svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="5" y="3" width="14" height="14" rx="2"/><path d="M9 8h6M9 12h4"/><path d="M8.5 17 7 22l5-2.5L17 22l-1.5-5"/></svg></div>
+          <h3>Diploma</h3>
+          <p>Short-cycle vocational and technical programs — a fast, affordable path into Chinese higher education.</p>
+        </article>
+        <article class="card reveal">
+          <div class="icon"><svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M2 4h6a4 4 0 0 1 4 4v12a3 3 0 0 0-3-3H2V4Z"/><path d="M22 4h-6a4 4 0 0 0-4 4v12a3 3 0 0 1 3-3h7V4Z"/></svg></div>
+          <h3>Master's Degree</h3>
+          <p>Postgraduate study with strong scholarship chances — build on your bachelor's with a Chinese master's.</p>
+        </article>
+        <article class="card reveal">
+          <div class="icon"><svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><circle cx="12" cy="12" r="1.6" fill="currentColor" stroke="none"/><ellipse cx="12" cy="12" rx="9.5" ry="4" transform="rotate(35 12 12)"/><ellipse cx="12" cy="12" rx="9.5" ry="4" transform="rotate(-35 12 12)"/></svg></div>
+          <h3>PhD</h3>
+          <p>Doctoral research positions with funded supervisor placements in science, engineering and the humanities.</p>
+        </article>
+        <article class="card reveal">
+          <div class="icon"><svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12a8 8 0 0 1-8 8H4l2.5-2.5A8 8 0 1 1 21 12Z"/><path d="M9 11h6M12 8v6" opacity=".9"/></svg></div>
+          <h3>Chinese Language</h3>
+          <p>Language foundation year — reach HSK level and unlock full degree study in Chinese.</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- SCHOLARSHIPS -->
+  <section id="scholarships" class="dark">
+    <div class="wrap">
+      <span class="kicker" style="color:var(--gold-2)">Funding Your Studies</span>
+      <h2 class="h-title">Scholarships</h2>
+      <p class="h-sub">MTH Global Education helps you apply for both fully funded and partial scholarships at Chinese universities.</p>
+      <div class="sch-grid">
+        <div class="sch full reveal">
+          <span class="ribbon">Top Award</span>
+          <h3>Fully Funded</h3>
+          <ul>
+            <li>Tuition covered by the scholarship</li>
+            <li>Monthly living stipend</li>
+            <li>On-campus accommodation</li>
+            <li>Competitive — strong academics improve your chances</li>
+          </ul>
+        </div>
+        <div class="sch partial reveal">
+          <span class="ribbon">Most Common</span>
+          <h3>Partial Scholarship</h3>
+          <ul>
+            <li>Tuition reduction (first-year or full duration)</li>
+            <li>More seats and wider choice of universities</li>
+            <li>Lower academic entry requirements</li>
+            <li>Still dramatically cheaper than studying at home abroad</li>
+          </ul>
+        </div>
+      </div>
+      <div class="note">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="12" cy="12" r="10"/><path d="M12 8v5M12 16.5v.5"/></svg>
+        <span><strong>Honest guidance:</strong> scholarship results depend on the university and your academic record. We give you transparent information about fees, costs and realistic scholarship chances <em>before</em> you commit to anything.</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- LIFE IN CHINA -->
+  <section id="life">
+    <div class="wrap">
+      <span class="kicker">Beyond The Classroom</span>
+      <h2 class="h-title">Life in China</h2>
+      <p class="h-sub">Ancient wonders, modern skylines and green campuses — your years in China are an education in themselves.</p>
+      <div class="tiles">
+        <figure class="tile reveal">
+          <img src="assets/img/wall.jpg" alt="The Great Wall of China winding through green mountains" loading="lazy" width="1200" height="900">
+          <figcaption><b>The Great Wall</b><span>Weekend trips you'll never forget</span></figcaption>
+        </figure>
+        <figure class="tile reveal">
+          <img src="assets/img/guilin.jpg" alt="Li River karst mountains at sunset in Guilin" loading="lazy" width="1200" height="800">
+          <figcaption><b>Li River, Guilin</b><span>Karst mountains at sunset</span></figcaption>
+        </figure>
+        <figure class="tile reveal">
+          <img src="assets/img/beijing.jpg" alt="Aerial view of the Forbidden City in Beijing" loading="lazy" width="1200" height="798">
+          <figcaption><b>Forbidden City, Beijing</b><span>Six centuries of history</span></figcaption>
+        </figure>
+      </div>
+      <div class="tiles" style="margin-top:24px">
+        <figure class="tile reveal">
+          <img src="assets/img/students1.jpg" alt="International students walking together on campus" loading="lazy" width="1200" height="817">
+          <figcaption><b>A Global Community</b><span>Friends from 12+ countries</span></figcaption>
+        </figure>
+        <figure class="tile reveal">
+          <img src="assets/img/students2.jpg" alt="Students walking across a modern campus" loading="lazy" width="1200" height="800">
+          <figcaption><b>Modern Campuses</b><span>Where your student life happens</span></figcaption>
+        </figure>
+        <figure class="tile reveal">
+          <img src="assets/img/cherry.jpg" alt="Cherry blossoms in full bloom on a campus path" loading="lazy" width="1200" height="800">
+          <figcaption><b>Cherry Blossom Season</b><span>Spring on campus</span></figcaption>
+        </figure>
+      </div>
+    </div>
+  </section>
+
+  <!-- HOW IT WORKS -->
+  <section id="guidance" style="background:var(--paper)">
+    <div class="wrap">
+      <span class="kicker">Personalized Admission Guidance</span>
+      <h2 class="h-title">How It Works</h2>
+      <p class="h-sub">One-to-one guidance with Dr Ali Khan — from your first question to your acceptance letter.</p>
+      <div class="steps">
+        <div class="step reveal">
+          <span class="num">01</span>
+          <h3>University Selection</h3>
+          <p>We match your budget, grades and program to the right Chinese universities — including scholarship options that fit your profile.</p>
+        </div>
+        <div class="step reveal">
+          <span class="num">02</span>
+          <h3>Application Support</h3>
+          <p>Your application is prepared and submitted correctly, on time, to give you the strongest chance for Spring Intake 2027.</p>
+        </div>
+        <div class="step reveal">
+          <span class="num">03</span>
+          <h3>Document Guidance</h3>
+          <p>Passport, transcripts, physical exam, police clearance, bank statement — we tell you exactly what each university needs and help you get it right.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- COUNTRIES -->
+  <section id="countries" style="padding-top:0">
+    <div class="wrap">
+      <span class="kicker">Who We Serve</span>
+      <h2 class="h-title">Our Students Come From</h2>
+      <div class="grid-3" style="margin-top:40px">
+        <div class="region reveal">
+          <h3>South Asia</h3>
+          <div class="flags">
+            <span class="chip"><span class="f">🇵🇰</span>Pakistan</span>
+            <span class="chip"><span class="f">🇮🇳</span>India</span>
+          </div>
+        </div>
+        <div class="region reveal">
+          <h3>Central Asia</h3>
+          <div class="flags">
+            <span class="chip"><span class="f">🇺🇿</span>Uzbekistan</span>
+            <span class="chip"><span class="f">🇰🇿</span>Kazakhstan</span>
+            <span class="chip"><span class="f">🇰🇬</span>Kyrgyzstan</span>
+            <span class="chip"><span class="f">🇹🇯</span>Tajikistan</span>
+            <span class="chip"><span class="f">🇹🇲</span>Turkmenistan</span>
+          </div>
+        </div>
+        <div class="region reveal">
+          <h3>Africa</h3>
+          <div class="flags">
+            <span class="chip"><span class="f">🇳🇬</span>Nigeria</span>
+            <span class="chip"><span class="f">🇬🇭</span>Ghana</span>
+            <span class="chip"><span class="f">🇰🇪</span>Kenya</span>
+            <span class="chip"><span class="f">🇹🇿</span>Tanzania</span>
+            <span class="chip"><span class="f">🇿🇦</span>South Africa</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- WHY US -->
+  <section class="why">
+    <div class="wrap flyer-grid">
+      <div class="brand-panel reveal">
+        <svg class="mark" viewBox="0 0 48 48" fill="none" aria-hidden="true">
+          <rect width="48" height="48" rx="10" fill="#e6b422"/>
+          <path d="M24 12 8 19l16 7 16-7-16-7Z" fill="#0b2447"/>
+          <path d="M14 23v7c0 3 4.5 5.5 10 5.5S34 33 34 30v-7" stroke="#0b2447" stroke-width="2.6" fill="none" stroke-linecap="round"/>
+          <circle cx="38" cy="20" r="2.2" fill="#0b2447"/>
+        </svg>
+        <div class="word">MTH<small>GLOBAL EDUCATION</small></div>
+        <p class="quote">"<b>Your Dreams.</b><br><b>Our Guidance.</b><br><b>Your Future.</b>"</p>
+      </div>
+      <div class="flyer-copy">
+        <span class="kicker">Why Students Trust Us</span>
+        <h2 class="h-title">Personalized. Honest.<br>Reliable.</h2>
+        <div class="point">
+          <div class="icon"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="m16 11 2 2 4-4"/></svg></div>
+          <div><h3>Guidance built around you</h3><p>Every student gets a personalized plan — no copy-paste counseling, no one-size-fits-all university lists.</p></div>
+        </div>
+        <div class="point">
+          <div class="icon"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2 4 5v6c0 5 3.4 9.4 8 11 4.6-1.6 8-6 8-11V5l-8-3Z"/><path d="m9 12 2 2 4-4"/></svg></div>
+          <div><h3>Safe, official channels only</h3><p>Applications go through official university admission portals — your documents and money stay protected.</p></div>
+        </div>
+        <div class="point">
+          <div class="icon"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg></div>
+          <div><h3>Spring Intake 2027 is open</h3><p>Seats and scholarships are limited — starting early is the single biggest advantage you can give yourself.</p></div>
+        </div>
+        <div style="margin-top:34px">
+          <a class="btn btn-wa" href="https://wa.me/992005114981?text=Hello%2C%20I%20saw%20the%20MTH%20Global%20Education%20website%20and%20want%20to%20know%20more." target="_blank" rel="noopener">Ask a Question on WhatsApp</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section id="contact">
+    <div class="wrap">
+      <div class="contact-card reveal">
+        <div class="avatar">AK</div>
+        <h2>Dr Ali Khan</h2>
+        <div class="role">MTH Global Education · Admissions Consultant</div>
+        <p class="desc">WhatsApp is the fastest way to reach us. Send your name, country and the program you're interested in — we'll take it from there.</p>
+        <div class="contact-num">+992 005 114 981</div>
+        <div class="contact-hint">WhatsApp &amp; calls · or email us</div>
+        <div class="emails">
+          <a class="mail" href="mailto:dralikhan55077@gmail.com"><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m2 7 10 6 10-6"/></svg>dralikhan55077@gmail.com</a>
+          <a class="mail" href="mailto:dralikhan0001@gmail.com"><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m2 7 10 6 10-6"/></svg>dralikhan0001@gmail.com</a>
+        </div>
+        <a class="btn btn-wa" href="https://wa.me/992005114981?text=Hello%20Dr%20Ali%20Khan%2C%20I%20am%20interested%20in%20studying%20in%20China%20(Spring%20Intake%202027)." target="_blank" rel="noopener">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2a10 10 0 0 0-8.6 15L2 22l5.2-1.4A10 10 0 1 0 12 2Zm5.3 14.1c-.2.6-1.3 1.2-1.8 1.2-.5.1-1 .2-3.4-.7-2.9-1.2-4.7-4.1-4.9-4.3-.1-.2-1.1-1.5-1.1-2.9s.7-2 1-2.3c.2-.3.5-.3.7-.3h.5c.2 0 .4 0 .6.4l.9 2.1c.1.2.1.4 0 .6l-.4.6-.5.6c-.2.2-.3.3-.1.6.2.3.8 1.4 1.8 2.2 1.3 1.1 2.3 1.5 2.6 1.6.3.1.5.1.7-.1l1-1.2c.2-.3.4-.2.7-.1l2 1c.3.1.5.2.6.3.1.2.1.7-.2 1.3Z"/></svg>
+          Message on WhatsApp
+        </a>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer>
+  <div class="wrap">
+    <p class="tag">"Your Dreams. Our Guidance. Your Future."</p>
+    <p class="brand-name">MTH GLOBAL EDUCATION</p>
+    <p style="margin-top:8px">© <span id="year">2026</span> MTH Global Education. Study in China — Spring Intake 2027.</p>
+    <p style="margin-top:6px"><a href="mailto:dralikhan55077@gmail.com" style="color:#b6c3da">dralikhan55077@gmail.com</a> · <a href="mailto:dralikhan0001@gmail.com" style="color:#b6c3da">dralikhan0001@gmail.com</a></p>
+    <p style="margin-top:14px;font-size:.72rem;color:#5d6f8c">Photography via Pexels</p>
+  </div>
+</footer>
+
+<a class="float-wa" href="https://wa.me/992005114981?text=Hello%20MTH%20Global%20Education%2C%20I%20want%20information%20about%20studying%20in%20China." target="_blank" rel="noopener" aria-label="Chat on WhatsApp">
+  <svg width="30" height="30" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2a10 10 0 0 0-8.6 15L2 22l5.2-1.4A10 10 0 1 0 12 2Zm5.3 14.1c-.2.6-1.3 1.2-1.8 1.2-.5.1-1 .2-3.4-.7-2.9-1.2-4.7-4.1-4.9-4.3-.1-.2-1.1-1.5-1.1-2.9s.7-2 1-2.3c.2-.3.5-.3.7-.3h.5c.2 0 .4 0 .6.4l.9 2.1c.1.2.1.4 0 .6l-.4.6-.5.6c-.2.2-.3.3-.1.6.2.3.8 1.4 1.8 2.2 1.3 1.1 2.3 1.5 2.6 1.6.3.1.5.1.7-.1l1-1.2c.2-.3.4-.2.7-.1l2 1c.3.1.5.2.6.3.1.2.1.7-.2 1.3Z"/></svg>
+</a>
+
+<div class="sticky-cta" id="stickyCta">
+  <a class="s-wa" href="https://wa.me/992005114981?text=Hello%20MTH%20Global%20Education%2C%20I%20want%20information%20about%20studying%20in%20China." target="_blank" rel="noopener">
+    <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2a10 10 0 0 0-8.6 15L2 22l5.2-1.4A10 10 0 1 0 12 2Zm5.3 14.1c-.2.6-1.3 1.2-1.8 1.2-.5.1-1 .2-3.4-.7-2.9-1.2-4.7-4.1-4.9-4.3-.1-.2-1.1-1.5-1.1-2.9s.7-2 1-2.3c.2-.3.5-.3.7-.3h.5c.2 0 .4 0 .6.4l.9 2.1c.1.2.1.4 0 .6l-.4.6-.5.6c-.2.2-.3.3-.1.6.2.3.8 1.4 1.8 2.2 1.3 1.1 2.3 1.5 2.6 1.6.3.1.5.1.7-.1l1-1.2c.2-.3.4-.2.7-.1l2 1c.3.1.5.2.6.3.1.2.1.7-.2 1.3Z"/></svg>
+    Chat on WhatsApp
+  </a>
+  <a class="s-num" href="tel:+992005114981">+992 005 114 981</a>
+</div>
+
+<script>
+document.getElementById('year').textContent = new Date().getFullYear();
+var burger = document.getElementById('burger');
+var links = document.getElementById('navLinks');
+burger.addEventListener('click', function () {
+  var open = links.classList.toggle('open');
+  burger.classList.toggle('open', open);
+  burger.setAttribute('aria-expanded', open);
+});
+links.addEventListener('click', function (e) {
+  if (e.target.tagName === 'A') { links.classList.remove('open'); burger.classList.remove('open'); }
+});
+var io = new IntersectionObserver(function (entries) {
+  entries.forEach(function (en) { if (en.isIntersecting) { en.target.classList.add('in'); io.unobserve(en.target); } });
+}, { threshold: 0.12 });
+document.querySelectorAll('.reveal').forEach(function (el) { io.observe(el); });
+var hero = document.getElementById('hero');
+var sticky = document.getElementById('stickyCta');
+var heroObs = new IntersectionObserver(function (entries) {
+  sticky.classList.toggle('show', !entries[0].isIntersecting);
+}, { rootMargin: '-80px 0px 0px 0px' });
+heroObs.observe(hero);
+var secs = document.querySelectorAll('section[id]');
+var navA = document.querySelectorAll('.nav-links a');
+var spy = new IntersectionObserver(function (entries) {
+  entries.forEach(function (en) {
+    if (en.isIntersecting) {
+      navA.forEach(function (a) { a.classList.toggle('active', a.getAttribute('href') === '#' + en.target.id); });
+    }
+  });
+}, { rootMargin: '-45% 0px -50% 0px' });
+secs.forEach(function (s) { spy.observe(s); });
+var canTilt = window.matchMedia('(hover:hover) and (pointer:fine)').matches;
+if (canTilt) {
+  document.querySelectorAll('.tile').forEach(function (t) {
+    t.addEventListener('pointermove', function (e) {
+      var r = t.getBoundingClientRect();
+      var x = (e.clientX - r.left) / r.width - .5;
+      var y = (e.clientY - r.top) / r.height - .5;
+      t.style.transform = 'perspective(900px) rotateX(' + (-y * 5).toFixed(2) + 'deg) rotateY(' + (x * 5).toFixed(2) + 'deg) translateY(-4px)';
+    });
+    t.addEventListener('pointerleave', function () { t.style.transform = ''; });
+  });
+}
+</script>
+</body>
+</html>
